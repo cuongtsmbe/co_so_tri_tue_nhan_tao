@@ -1,19 +1,14 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package co_so_tri_tue_nhan_tao.Astar;
 
 import java.util.ArrayList;
 
-/**
- *
- * @author phanh
- */
+
 public class Current {
     int hx; //h(x)
     String name;
     int gx; //g(x)
+    Current Prev=null;
     ArrayList<Child> list_adjacent_vertex=new ArrayList<>();
     public Current(){}
     public Current(String name,int hx){
